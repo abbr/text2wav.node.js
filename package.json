@@ -1,0 +1,27 @@
+{
+  "name": "text2wav",
+  "version": "0.0.1",
+  "description": "TTS speech synthesizer for Node.js supporting 101 languages and accents",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abbr/text2wav.node.js.git"
+  },
+  "keywords": [
+    "tts",
+    "语音合成",
+    "espeak",
+    "espeak-ng",
+    "speech"
+  ],
+  "author": "abbr <wenfred@gmail.com> (https://github.com/abbr)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/abbr/text2wav.node.js/issues"
+  },
+  "homepage": "https://github.com/abbr/text2wav.node.js#readme"
+}

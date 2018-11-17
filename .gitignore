@@ -1,3 +1,6 @@
+# wav files
+*.wav
+
 # Logs
 logs
 *.log
