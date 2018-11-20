@@ -83,10 +83,10 @@ Synopsis
 
 #### More examples
 
-  * API: `let out = await text2wav('你好', {voice: 'zh'})`
-  * CLI: `text2wav '你好' -v zh > test.wav`
+  * API: `let out = await text2wav('测试', {voice: 'zh'})`
+  * CLI: `text2wav '测试' -v zh > test.wav`
   
-    TTS in chinese language
+    TTS in chinese
   * API: `let out = await text2wav('test', {voice: 'en+whisper')`
   * CLI: `text2wav test -v en+whisper > test.wav`
   
