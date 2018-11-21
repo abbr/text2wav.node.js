@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/abbr/text2wav.node.js.svg?branch=master)](https://travis-ci.org/abbr/text2wav.node.js)
+
 # text2wav.node.js
 A TTS speech synthesizer for Node.js, supporting 101 languages and accents.
 
@@ -28,11 +30,17 @@ to use CLI.
 Synopsis
 
 * API
-
+  * Javascript
   ```
   const text2wav = require('text2wav')
   let out = await text2wav(<text>[,<opts>])
   ```
+  * Typescript
+  ```
+  import text2wav = require('text2wav')
+  let out = await text2wav(<text>[,<opts>])
+  ```
+  
   where *\<text\>* is string and *\<opts\>* is a json object. Returns wav content of type *Uint8Array*.
   
 * CLI

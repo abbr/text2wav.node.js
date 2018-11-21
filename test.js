@@ -1,6 +1,6 @@
 (async () => {
   const assert = require('assert').strict
-  let text2Wav = require('./index.js')
+  const text2Wav = require('./index.js')
   let out = await text2Wav('"test", I say.', {
     punct: '"'
   })
