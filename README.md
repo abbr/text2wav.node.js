@@ -11,7 +11,7 @@ There are not many self-contained FOSS speech synthesizer npm modules. Most TTS 
 * convert text to wav
 * support 101 languages and accents out-of-the-box
 * allow input to be UTF-8 encoded text in native languages
-* self-contained FOSS
+* self-contained FOSS, not even depending on other npm modules
 * 100% Javascript/Typescript
 
 ## How

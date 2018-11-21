@@ -1,6 +1,6 @@
 {
   "name": "text2wav",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "TTS speech synthesizer for Node.js supporting 101 languages and accents",
   "main": "index.js",
   "types": "index.d.ts",
@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/abbr/text2wav.node.js/issues"
   },
-  "homepage": "https://github.com/abbr/text2wav.node.js#readme"
+  "homepage": "https://github.com/abbr/text2wav.node.js#readme",
+  "engines": {
+    "node": ">=8.9.0"
+  }
 }
