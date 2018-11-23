@@ -1,6 +1,6 @@
 {
   "name": "text2wav",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "TTS speech synthesizer for Node.js supporting 101 languages and accents",
   "main": "index.js",
   "types": "index.d.ts",

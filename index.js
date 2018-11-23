@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 const eSpeakNg = require('./lib/espeak-ng')
 const optMap = {
   voice: '-v',
@@ -33,7 +34,8 @@ module.exports = function () {
         }
         continue
       }
-      parsedArguments.push(optMap[prop] + ' ' + arguments[1][prop])
+      parsedArguments.push(optMap[prop])
+      parsedArguments.push(arguments[1][prop])
     }
   } else {
     parsedArguments = parsedArguments.concat(Array.from(arguments).slice(1))

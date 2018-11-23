@@ -2,7 +2,8 @@
   const assert = require('assert')
   const text2Wav = require('./index.js')
   let out = await text2Wav('"test", I say.', {
-    punct: '"'
+    voice: 'en',
+    punct: '"',
   })
   assert.equal(out[0], 82) //R
   assert.equal(out[1], 73) //I
