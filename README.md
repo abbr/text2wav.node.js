@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/abbr/text2wav.node.js.svg?branch=master)](https://travis-ci.org/abbr/text2wav.node.js)
 
 # text2wav.node.js
-A TTS speech synthesizer for Node.js, supporting 101 languages and accents.
+Self-contained multilingual TTS speech synthesizer for Node.js.
 
 ## Why
 There are not many self-contained FOSS speech synthesizer npm modules. Most TTS npm modules are just a wrapper to an external online service or a separately installed host program. For those self-contained FOSS modules, they are either designed to run in browser to play out the speech rather than output the audio file, or lacking multilingual support.
