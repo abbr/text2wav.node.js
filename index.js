@@ -44,6 +44,7 @@ module.exports = function () {
     let Module = {
       arguments: parsedArguments,
       postRun: function () {
+        Module.FS.unmount('/usr/share')
         resolve(new Uint8Array(Module.FS.root.contents['wav.wav'].contents))
       }
     }
