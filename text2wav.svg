@@ -1,5 +1,24 @@
 <?xml version="1.0"?>
-<svg width="286.016" height="289.761" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="300" height="289.761" 
+viewBox="25 0 286 300"
+xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <style>
+   .wave {
+    animation: wave 1s 1s ease-in-out infinite;
+    transform-origin: 50% 100%;
+  }
+  @keyframes wave {
+    from {
+      transform: rotate(0);
+    }
+    50% {
+      transform: rotate(20deg);
+    }
+    to {
+      transform: rotate(0);
+    }
+  }
+ </style>
  <defs>
   <symbol height="289.761" id="svg_7" viewBox="0 0 286.016 289.761" width="286.016" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
    <switch>
@@ -8,7 +27,7 @@
      <g id="svg_6">
       <rect fill="none" height="289.761" width="286.016"/>
       <path d="m67.265,203.297c4.001,17.025 13.368,32.77 24.919,43.293c12.779,11.641 27.907,5.285 41.089,9.52c9.405,3.021 17.901,6.807 28.714,3.371c16.238,-5.16 38.154,-46.172 42.324,-61.123c2.029,-7.266 45.414,-39.908 56.35,-47.131c16.418,-10.84 8.15,-28.834 -9.289,-19.791c-11.855,6.148 -51.602,40.602 -57.951,34.059s36.33,-73.709 43.051,-83.852c10.572,-15.958 -10.541,-26.846 -19.885,-13.199c-5.885,8.592 -44.021,77.211 -50.424,74.564c-6.403,-2.646 8.253,-81.105 10.439,-94.6c3.707,-22.875 -20.402,-27.361 -24.219,-4.039c-2.169,13.25 -13.406,91.547 -19.883,92.725s-26.693,-67.764 -31.055,-82.861c-5.918,-20.477 -27.516,-13.882 -22.154,6.934c3.877,15.059 23.036,81.072 16.934,103.57c-3.52,12.971 -6.746,11.518 -16.583,-0.264c-26.474,-31.703 -55.667,-34.346 -63.162,-17.869c17.558,10.337 45.353,33.576 50.785,56.693z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="2.2742"/>
-      <path d="m199.344,172.902c-21.223,-35.648 -55.967,-37.51 -81.839,-34.818" fill="#FFFFFF" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="2"/>
+      <path d="m199.344,172.902c-21.223,-35.648 -55.967,-37.51 -81.839,-34.818" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="2"/>
      </g>
     </g>
    </switch>
@@ -24,10 +43,53 @@
    </g>
   </g>
  </switch>
- <g class="layer">
-  <title>Layer 1</title>
+ <g id="hand" class="wave" style="pointer-events:bounding-box">
   <use id="svg_8" transform="matrix(0.983982 0 0 0.992649 1.95195 1.97795)" xlink:href="#svg_7"/>
-  <g id="svg_9"/>
   <text fill="#000000" font-family="Cursive" font-size="63" id="svg_10" stroke="#000000" stroke-width="0" text-anchor="middle" x="137.507996" xml:space="preserve" y="219.339014">text</text>
  </g>
+   <script type="text/javascript"><![CDATA[
+    var hand = document.getElementById("hand")
+    hand.addEventListener('mouseover',function(evt){
+    });
+    hand.addEventListener('mouseout',function(evt){
+    });
+
+    document.addEventListener('scroll', animate);
+    // check if element is in view
+    function inView(element) {
+      // get window height
+      var windowHeight = window.innerHeight;
+      // get number of pixels that the document is scrolled
+      var scrollY = window.scrollY || window.pageYOffset;
+      
+      // get current scroll position (distance from the top of the page to the bottom of the current viewport)
+      var scrollPosition = scrollY + windowHeight;
+      // get element position (distance from the top of the page to the bottom of the element)
+      var elementPosition = element.getBoundingClientRect().top + scrollY + element.clientHeight;;
+      
+      // is scroll position greater than element position? (is element in view?)
+      if (scrollPosition > elementPosition) {
+        return true;
+      }
+      
+      return false;
+    }
+    // animate element when it is in view
+    function animate() {
+      // is element in view?
+      if (inView(hand)) {
+          // element is in view, add class to element
+          hand.style.animation = 'none';
+          setTimeout(function(){
+            hand.style.animation = '';
+            hand.classList.add('wave');
+          },1000)
+      }
+      else {
+          // element is in view, add class to element
+          hand.classList.remove('wave');
+      }
+    }
+  ]]>
+  </script>
 </svg>

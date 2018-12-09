@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/abbr/text2wav.node.js.svg?branch=master)](https://travis-ci.org/abbr/text2wav.node.js)
 
+![](./text2wav.svg)
 # text2wav.node.js
 Self-contained multilingual TTS speech synthesizer for Node.js in pure js.
 
