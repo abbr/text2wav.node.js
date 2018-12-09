@@ -1,7 +1,9 @@
 {
-	"folders": [
-		{
+	"folders": [{
 			"path": "."
+		},
+		{
+			"path": "../espeak-ng"
 		}
 	],
 	"settings": {}

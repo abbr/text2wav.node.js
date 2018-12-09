@@ -8,3 +8,4 @@
 *.vsdx binary
 *.pdf binary
 *.wasm binary
+espeak-ng-data/* binary

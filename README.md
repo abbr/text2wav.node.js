@@ -113,7 +113,7 @@ Synopsis
 git clone https://github.com/espeak-ng/espeak-ng.git
 cd espeak-ng
 ./autogen.sh
-./configure --prefix=/usr --without-async --without-mbrola --without-sonic
+./configure --without-async --with-extdict-zh --with-extdict-zhy --with-extdict-ru
 make
 cd src/ucd-tools/
 ./autogen.sh
@@ -121,7 +121,7 @@ make clean
 emconfigure ./configure
 emmake make
 cd ../..
-emconfigure ./configure --prefix=/usr --without-async --without-mbrola --without-sonic --enable-shared=false
+emconfigure ./configure --without-async --without-mbrola --without-sonic --enable-shared=false
 emmake make src/espeak-ng
 mv src/espeak-ng src/espeak-ng.bc
 emcc -s ERROR_ON_UNDEFINED_SYMBOLS=0 -s MODULARIZE=1 -s 'EXPORT_NAME="EspeakNg"' -o espeak-ng.js src/espeak-ng.bc
