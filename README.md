@@ -10,7 +10,7 @@ There are not many self-contained FOSS speech synthesizer npm modules. Most TTS 
 *text2wav.node.js* is arguably the first, if not the only node.js module, to support all of following features
 
 * convert text to wav
-* support 101 languages and accents out-of-the-box
+* support over 100 languages and accents out-of-the-box
 * allow input to be UTF-8 encoded text in native languages
 * self-contained FOSS, not even depending on other npm modules
 * 100% Javascript/Typescript
