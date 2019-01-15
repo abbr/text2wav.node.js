@@ -96,7 +96,7 @@ Synopsis
   * CLI: `text2wav '测试' -v zh > test.wav`
   
     TTS in chinese
-  * API: `let out = await text2wav('test', {voice: 'en+whisper')`
+  * API: `let out = await text2wav('test', {voice: 'en+whisper'})`
   * CLI: `text2wav test -v en+whisper > test.wav`
   
     use whisper variant
