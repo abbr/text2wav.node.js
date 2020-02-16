@@ -106,7 +106,7 @@ Synopsis
     speak the punctuation "
     
 ## Under the hood
-*text2wav.node.js* compiles [espeak-ng](https://github.com/espeak-ng/espeak-ng) into Javascript and [WebAssembly](https://webassembly.org/) libraries using [Emscripten](https://kripken.github.io/emscripten-site/). *text2wav.node.js* also includes compiled voice data from *espeak-ng*. The *text2wav.node.js* API takes the text and voice parameters as input, and generates the wav ouput.
+*text2wav.node.js* compiles [espeak-ng](https://github.com/espeak-ng/espeak-ng) into Javascript and [WebAssembly](https://webassembly.org/) libraries using [Emscripten](https://kripken.github.io/emscripten-site/). *text2wav.node.js* also includes compiled voice data from *espeak-ng*. The *text2wav.node.js* API or CLI takes the text and voice parameters as input, and generates the wav ouput.
 
 ### To compile
 
