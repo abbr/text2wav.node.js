@@ -1,6 +1,6 @@
 {
   "name": "text2wav",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "Self-contained multilingual TTS speech synthesizer for Node.js in pure js",
   "main": "index.js",
   "types": "index.d.ts",
