@@ -8,12 +8,12 @@ declare interface Options {
     speed?: number,
     encoding?: number,
     hasTags?: boolean,
-    noFinalPauls?: boolean,
+    noFinalPause?: boolean,
     punct?: string,
 }
 
 interface text2wav {
-    (text: string, opts?: Options): Uint8Array
+    (text: string, opts?: Options): Promise<Uint8Array>
 }
 declare const instance: text2wav
 export = instance
