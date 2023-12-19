@@ -67,7 +67,7 @@ Synopsis
 | noFinalPause | -z | boolean | false | No final sentence pause at the end of the text. |
 | punct | --punct[=] | string or boolean | false | Speak the names of punctuation characters during speaking. If =\<string\> is omitted, all punctuations are spoken. |
 
-#### Basice Usage Example
+#### Basic Usage Example
 
 * API
 
